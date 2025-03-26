@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Centered Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url("https://img.freepik.com/premium-photo/copy-space-blue-circuits-digital-background_629685-9503.jpg") no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 20px; 
+            margin-bottom: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #ff6f61;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #e63946;
+        }
+    </style>
+    <script>
+        function redirectToPage(event) {
+            event.preventDefault();  // Prevent form submission
+            window.location.href = "https://vnvg6heqwdsv39u39aa9ek.streamlit.app";
+        }
+    </script>
+</head>
+<body>
+    <div> 
+        <img src="https://pbs.twimg.com/profile_images/1634150060589223937/kvVk3oRh_400x400.jpg" alt="Centered Image">
+    </div>
+    <div style="text-align: center;margin-bottom: 20px;">
+        <h1>MENTAL HEALTH DISORDER ANALYZER</h1>
+        <p style="margin-top: 10px;">Be aware of your mental wellness</p>
+    </div>
+    <div class="container" style="background-color: aliceblue;">
+        <div class="container">  
+            <h3>USER LOGIN</h3>   
+        </div>   
+        <div style="margin-top: 20px;">
+            <form onsubmit="redirectToPage(event)">    
+                <label for="name"> Username :</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" style="border-radius: 5%; height:20px; border-style: unset;"><br><br>
+                <label for="password"> Password :</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" style="border-radius: 5%; height:20px; border-style: unset;"><br> 
+                <button type="submit">Submit</button>
+            </form>  
+        </div> 
+    </div>
+</body>
+</html>
